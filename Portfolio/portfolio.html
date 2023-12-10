@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+        body {
+            background-color: #9dafa5;
+            font-family: "Playfair Display", serif;
+            color: #0c311d;
+        }
+
+        h2 {
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .a {
+            padding: 5px;
+            color: #0c311d;
+            text-align: center;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+        img:hover {
+            border: 2px solid white;
+        }
+
+        .a:hover {
+            background-color: rgb(159, 193, 165);
+            border-radius: 4px;
+        }
+
+        .a:link {
+            background-color: rgb(159, 183, 153);
+        }
+
+        .a:active {
+            background-color: rgb(255, 255, 255);
+        }
+
+        img {
+            height: auto;
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        :root {
+            --primary-color: #4D8065;
+            --primary-color-dark: #0C311D;
+            --secondary-color: #978181;
+            --text-dark: #28081B;
+            --text-light: #103144;
+            --extra-light: #EFF7EF;
+            --max-width: 1200px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            background-color: #ffffff;
+            z-index: 99;
+        }
+
+        .nav__content {
+            max-width: var(--max-width);
+            margin: auto;
+            padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav .logo a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            transition: 0.3s;
+        }
+
+        nav .checkbox {
+            display: none;
+        }
+
+        nav input {
+            display: none;
+        }
+
+        nav .checkbox i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+            transition: left 0.3s;
+        }
+
+        ul li a {
+            padding: 0.5rem 1rem;
+            border: 2px solid transparent;
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: 0.3s;
+        }
+
+        ul li a:hover {
+            border-top-color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        @media (width < 750px) {
+
+nav .checkbox {
+    display: block;
+}
+
+
+ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav #check:checked ~ ul {
+    left: 0;
+}
+
+ul li a {
+    font-size: 1.25rem;
+}
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="">Urja Shah</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+    <h2>
+        <a href="https://issuu.com/urjaashaah/docs/studio_font_book" class="a">Work on the typeface Playfair Display</a>
+    </h2>
+
+    <div class="container row my-1 mx-auto pb-0" style="height: 60vh; width: auto">
+        <div class="col container my-2 me-2">
+            <img src="/img/TypePoster1_UrjaShah_CD-D.jpg" alt="" style="width: 100%; padding: 10px"
+                class="responsive" />
+        </div>
+        <div class="col container mx-1">
+            <div class="container mx-1 my-1 px-0 row" style="height: 30vh; width: auto">
+                <img src="/img/history.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="container my-1 mx-1 px-0 row" style="height: 30vh; width: auto">
+                <img src="/img/combination.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+        <div class="col container my-1 ms-2">
+            <img src="/img/TypePoster2_UrjaShah_CD-D.jpg" alt="" style="width: 100%; padding: 10px"
+                class="responsive" />
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <h2>Posters on Art Movements</h2>
+
+    <div class="container row my-1 mx-auto pb-0" style="height: 60vh; width: auto">
+        <div class="col container my-2 me-2">
+            <img src="/img/baroque (1).jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+        </div>
+        <div class="col container my-1 mx-1">
+            <img src="/img/impressionism.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+        </div>
+        <div class="col container my-1 ms-2">
+            <img src="/img/Poster 2.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <h2>
+        <a href="https://issuu.com/urjaashaah/docs/godisawoman-f" class="a">
+            "God Is A Woman"</a>
+    </h2>
+
+    <div class="container row mx-auto my-1 pb-0" style="height: 60vh; width: auto">
+        <div class="container col my-1 me-1">
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/godisawoman-f-1.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/godisawoman-f-8.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+        <div class="container col my-1 mx-1">
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/godisawoman-f-5.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/godisawoman-f-9.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+        <div class="container col my-1 ms-1">
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/godisawoman-f-6.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/godisawoman-f-12.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <h2>
+        <a href="https://issuu.com/urjaashaah/docs/a6.book" class="a"> "Modern Family"</a>
+    </h2>
+
+    <div class="container row mx-auto my-1 pb-0" style="height: 60vh; width: auto">
+        <div class="container col my-1 me-1">
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/A6.book-1.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/A6.book-2.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+        <div class="container col my-1 mx-1">
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/A6.book-4.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/A6.book-7.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+        <div class="container col my-1 ms-1">
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/A6.book-14.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="row container my-1 mx-1 pb-0">
+                <img src="/img/A6.book-15.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <h2>Creatives for FITMOR</h2>
+
+    <div class="container row my-1 mx-auto pb-0" style="height: 60vh; width: auto">
+        <div class="col container my-2 me-2">
+            <img src="/img/betty.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+        </div>
+        <div class="col container mx-1">
+            <div class="container mx-1 my-1 px-0 row" style="height: 30vh; width: auto">
+                <img src="/img/hummus.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+            <div class="container my-1 mx-1 px-0 row" style="height: 30vh; width: auto">
+                <img src="/img/e9.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+            </div>
+        </div>
+        <div class="col container my-1 ms-2">
+            <img src="/img/spoon scoop.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <h2>Packaging Design with an Original Typeface</h2>
+
+    <div class="container row my-1 mx-auto pb-0" style="height: 60vh; width: auto">
+        <div class="col container my-1 me-1">
+            <img src="/img/mockup-absolut front.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+        </div>
+        <div class="col container my-1 ms-1">
+            <img src="/img/mockup-absolut back.jpg" alt="" style="width: 100%; padding: 10px" class="responsive" />
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+    <h2>Experimenting with Typographic Layout Systems</h2>
+
+    <div class="container row  my-1 mx-auto pb-0" style="height: 60vh; width: auto;">
+        <div class="col  container my-2 me-2">
+            <img src="/img/LayoutSystems_UrjaShah_CD-D-1.jpg" alt="" style="width: 100%; padding: 10px; "
+                class="responsive">
+        </div>
+        <div class="col container my-1 mx-1 ">
+            <img src="/img/LayoutSystems_UrjaShah_CD-D-2.jpg" alt="" style="width: 100%; padding: 10px; "
+                class="responsive">
+        </div>
+        <div class="col  container my-1 ms-2">
+            <img src="/img/LayoutSystems_UrjaShah_CD-D-3.jpg" alt="" style="width: 100%; padding: 10px; "
+                class="responsive">
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
+
+</body>
+
+</html>
